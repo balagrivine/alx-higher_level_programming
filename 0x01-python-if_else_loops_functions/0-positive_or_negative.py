@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10, 10)
+res = ""
 if number > 0:
-    print("{} is positive\n" .format(number))
+    res = "{} is positive\n" .format(number)
 elif number < 0:
-    print("{} is negative\n" .format(number))
+    res = "{} is negative\n" .format(number)
 else:
-    print("{} is zero\n" .format(number))
+    res = "{} is zero\n" .format(number)
+print("{}" .format(res))
