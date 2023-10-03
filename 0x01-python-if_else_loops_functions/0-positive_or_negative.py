@@ -8,4 +8,4 @@ elif number < 0:
     res = "{} is negative\n" .format(number)
 else:
     res = "{} is zero\n" .format(number)
-print("{}" .format(res))
+print(res)
