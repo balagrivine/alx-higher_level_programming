@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 def uppercase(str):
     for char in str:
         sep = '\n' if char == '\0' else ''
