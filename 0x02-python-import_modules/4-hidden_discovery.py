@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    import py_compile
-    hidden_4 = py_compile.load("hidden_4.pyc")
+    import hidden_4
 
     mods = dir(hidden_4)
     for mod in mods:
