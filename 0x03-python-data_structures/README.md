@@ -1,0 +1,1 @@
+In this directory, I practiced the skills that I had learnt in python data structures like lists and tuples. I have done several list methods such as append(), pop(), insert(), del() keyword as well as sequence packing and tuple unpacking
