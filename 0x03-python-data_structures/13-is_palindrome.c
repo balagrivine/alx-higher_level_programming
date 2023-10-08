@@ -22,7 +22,6 @@ int is_palindrome(listint_t **head)
 	if (*head == NULL)
 	{
 		return 1;
-		free(*head);
 	}
 	temp = *head;
 	for (i = 0; i < count; i++)
