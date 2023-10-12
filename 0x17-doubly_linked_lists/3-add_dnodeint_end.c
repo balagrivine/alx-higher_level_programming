@@ -7,7 +7,7 @@
  * @head: pointer to pointer to the head of the list
  * @n: new data element
  *
- * Return: address of new element, NULL if failed
+ * Return: address of new element, NULL  failed
  */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
@@ -37,5 +37,5 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		temp->next = new_node;
 		new_node->prev = temp;
 	}
-	return new_node;
+	return (new_node);
 }
