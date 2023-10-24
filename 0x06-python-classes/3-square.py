@@ -5,7 +5,7 @@
 class Square():
     """initialize a new area"""
 
-    def __init__(self, size):
+    def __init__(self, size=0):
         """Initialize new square
 
         Args:
