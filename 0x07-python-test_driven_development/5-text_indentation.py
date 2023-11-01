@@ -13,7 +13,7 @@ def text_indentation(text):
     """
 
     if not isinstance(text, str):
-        raises TypeError("text must be a string")
+        raise TypeError("text must be a string")
 
     for delim in ".?:":
         # prin(delim, text.split(delim))
@@ -22,6 +22,6 @@ def text_indentation(text):
 
     print(text, end="")
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     import doctest
     doctest.testfile("tests/5-text_indentation.txt")
