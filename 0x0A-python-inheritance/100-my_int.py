@@ -2,6 +2,7 @@
 """python class that inverts == and !=
 """
 
+
 class MyInt(int):
     """inherits from int
 
