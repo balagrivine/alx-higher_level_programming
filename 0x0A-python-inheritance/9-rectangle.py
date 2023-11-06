@@ -2,11 +2,12 @@
 """a rectangle class that returns a formatted string
 """
 
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 """
 basegeometry for inheritance
 """
+
 
 class Rectangle(BaseGeometry):
     """Rectangle class

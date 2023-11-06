@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-
 """a rectangle class with instantiation
 """
+
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 """
