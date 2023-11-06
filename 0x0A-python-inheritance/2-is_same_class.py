@@ -1,9 +1,9 @@
-#!/usr/bin/python3
-
-
+#!/usr/bin/python
 """
     function that compares the class type of an object
 """
+
+
 def is_same_class(obj, a_class):
     """function that checks if an object in an instance of a class
         Args:
