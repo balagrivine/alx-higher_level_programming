@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """class that gets the area of a square"""
 
-Rectangle = __import__('9-rectangle').Rectangle
 
+Rectangle = __import__('9-rectangle').Rectangle
 """
 rectangle module for inheritance
 """
+
 
 class Square(Rectangle):
     """square class defining a square
