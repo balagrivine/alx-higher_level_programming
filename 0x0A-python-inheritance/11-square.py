@@ -2,6 +2,8 @@
 """
 class that returns a formatted string
 """
+
+
 Rectangle = __import__('9-rectangle').Rectangle
 """
 rectangle module for inheriatnce
