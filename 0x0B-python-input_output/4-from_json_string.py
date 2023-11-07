@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import json
+from io import StringIO
 """import file"""
 
 
@@ -11,5 +12,6 @@ def from_json_string(my_str):
         my_str: JSON string
     """
 
-    obj = json.loads(my_str)
+    io = StringIO(my_str)
+    obj = json.loads(io)
     return obj
