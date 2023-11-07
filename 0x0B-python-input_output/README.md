@@ -1,0 +1,1 @@
+As part of my dailt ALX journey, I decided to delve into file I/O in python. I learnt aabout the read, write and close functions and how I can effectively write to and read from files to ensure that I write robust and efficient pyrthon programs
