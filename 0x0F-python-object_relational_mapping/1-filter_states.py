@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
+
 import MySQLdb
 import sys
+
 """
-Write a script that lists all states from the database hbtn_0e_0_usa:
+Write a script that lists all states with a name starting with N (upper N) from the database hbtn_0e_0_usa:
 
     Your script should take 3 arguments: mysql username, mysql password and database name (no argument validation needed)
     You must use the module MySQLdb (import MySQLdb)
@@ -15,11 +17,9 @@ Write a script that lists all states from the database hbtn_0e_0_usa:
 
 if __name__ == "__main__":
     db = MySQLdb.connect(user='root', passwd='Balagrivine254.', db='hbtn_0e_0_usa')
-
     conn = db.cursor()
-    conn.execute("SELECT id, name FROM states ORDER BY id")
+    conn.execute("SELECT DISTINCT `name`, `id` FROM `states` WHERE `name` LIKE 'N%'")
+    [print(states) for states in conn.fetchall()]
 
-    [print(state) for state in conn.fetchall()]
     db.close()
     conn.close()
-
