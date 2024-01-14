@@ -16,11 +16,14 @@ Write a script that lists all states with a name starting with N (upper N) from 
 """
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3], host='localhost', port=3306)
+    db = MySQLdb.connect(host='localhost', user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3], port=3306)
 
     conn = db.cursor()
-    conn.execute("SELECT *  FROM `states` WHERE `name` LIKE 'N%' ORDER BY states.id")
-    [print(states) for states in conn.fetchall()]
+    conn.execute("SELECT *  FROM `states` WHERE BINARY `name` LIKE 'N%' ORDER BY states.id")
+    result = conn.fetchall()
+
+    for states in result:
+        print(states)
 
     conn.close()
     db.close()
