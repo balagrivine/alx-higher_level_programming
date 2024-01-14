@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
 
-import MySQLdb
-import sys
 
 """
 Write a script that lists all states with a name starting with N (upper N) from the database hbtn_0e_0_usa:
@@ -16,6 +14,8 @@ Write a script that lists all states with a name starting with N (upper N) from 
 """
 
 if __name__ == "__main__":
+    import MySQLdb, sys
+
     db = MySQLdb.connect(host='localhost', user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3], port=3306)
 
     conn = db.cursor()
