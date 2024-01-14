@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 
-import sys, MySQLdb
 """
 Your script should take 4 arguments: mysql username, mysql password, database name and state name searched (safe from MySQL injection)
 You must use the module MySQLdb (import MySQLdb)
@@ -12,7 +11,8 @@ Your code should not be executed when imported
 """
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
+    import MySQLdb, sys
+    db = MySQLdb.connect(host='localhost', port=3306, user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
 
     conn = db.cursor()
 
