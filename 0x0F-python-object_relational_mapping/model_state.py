@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 
 
-import sqlalchemy
-from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-
 """
 Write a python file that contains the class definition of a State and an instance Base = declarative_base():
 
@@ -18,6 +14,9 @@ Write a python file that contains the class definition of a State and an instanc
     WARNING: all classes who inherit from Base must be imported before calling Base.metadata.create_all(engine)
 
 """
+import sqlalchemy
+from sqlalchemy import create_engine, Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
