@@ -22,7 +22,10 @@ Write a python file that contains the class definition of a State and an instanc
 Base = declarative_base()
 
 class State(Base):
-    """Defining class State"""
+    """Defining class State
+        Class state defining the attributes
+        out table will be having
+    """
     __tablename__ = "states"
 
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
