@@ -2,7 +2,7 @@
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
-class TestInteger(unittest.Testcase):
+class TestInteger(unittest.TestCase):
     """
     Class for the unittest to test our function
 
@@ -20,14 +20,14 @@ class TestInteger(unittest.Testcase):
     def test_max_beginning(self):
         """Test a list with max integer at the beginning"""
         max_beginning = [4, 1, 2, 3]
-        self.asertEqual(max_integer(max_beginning), 4)
+        self.assertEqual(max_integer(max_beginning), 4)
 
-    def test ordered_list(self):
+    def test_ordered_list(self):
         """Test an ordered list"""
         ordered = [1, 2, 3, 4]
         self.assertEqual(max_integer(ordered), 4)
 
-    def test unordered_list(self):
+    def test_unordered_list(self):
         """Test an unordered list"""
         unordered = [1, 4, 3, 2]
         self.assertEqual(max_integer(unordered), 4)
