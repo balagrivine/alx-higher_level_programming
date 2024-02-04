@@ -10,7 +10,7 @@ def find_peak(list_of_integers):
     else:
         max_int = max(list_of_integers)"""
     max_int = 0
-    for num in range(list_of_integers):
+    for num in range(len(list_of_integers) - 1):
         if list_of_integers[num + 1] >= list_of_integers[num]:
             max_int = list_of_integers[num + 1]
     return max_int
