@@ -1,1 +1,0 @@
-This is the round of my alx journey where I delved into the realm of test driven development. I worked around this project to get myself accuinted with the concept of writing unittest and doctest in an aim to build more flexible and error free code.
